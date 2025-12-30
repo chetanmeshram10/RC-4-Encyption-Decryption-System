@@ -218,8 +218,9 @@ export default function Home() {
         </div>
 
         <footer className="text-center text-gray-600 mt-6 text-sm">
-          ITC Lab Assignment – RC4 WebAssembly Implementation
+          Developed by <span className="font-semibold">Chetan Meshram – RC4 WebAssembly Implementation</span>
         </footer>
+
       </div>
     </main>
   );
