@@ -1,15 +1,14 @@
-import type { NextConfig } from 'next';
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   webpack: (config) => {
-    config.experiments = {
-      ...config.experiments,
-      asyncWebAssembly: true,
+    config.resolve.fallback = {
+      fs: false,
+      path: false,
+      crypto: false,
     };
     return config;
   },
-  // Fix turbopack warning
-  turbopack: {},
 };
 
 export default nextConfig;
